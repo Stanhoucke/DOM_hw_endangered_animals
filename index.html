@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Animals</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <h1>Endangered Animals</h1>
+    <button id="delete-all">Delete All</button>
+    <ul id="animal-list"></ul>
+
+    <h3>Add New Animal</h3>
+    <form id="new-animal-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+              <label for="name" class="primary">Name</label>
+              <input type="text" id="name" placeholder="Type animal name" required/>
+            </div>
+    
+            <div class="form-item">
+              <label for="species" class="primary">Species</label>
+              <input type="text" id="species" placeholder="Type animal species" required/>
+            </div>
+    
+            <div class="form-item">
+              <label for="continent" class="primary">Continent</label>
+              <select id="continent">
+                <option value="" disabled selected>Select a continent</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Oceania">Oceania</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Antarctica">Antarctica</option>
+              </select>
+            </div>
+
+            <div id="animal-radio-buttons" class="form-item">
+                <p>Level of conservation:</p>
+                <div>
+                    <input type="radio" id="conservation1"
+                     name="conservation" value="Near Threatened">
+                    <label for="conservation1">Near Threatened</label>
+                
+                    <input type="radio" id="conservation2"
+                     name="conservation" value="Endangered">
+                    <label for="conservation2">Endangered</label>
+                
+                    <input type="radio" id="conservation3"
+                     name="conservation" value="Extinct in the Wild">
+                    <label for="conservation3">Extinct in the Wild</label>
+                </div>
+            </div>
+          </div>
+          <input type="submit" value="Save"/>
+    </form>
+
+</body>
+</html>
