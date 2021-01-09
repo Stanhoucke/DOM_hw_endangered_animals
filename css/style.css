@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 2%;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    /* font-size: 20pt; */
+    font-weight: normal;
+    background-image: linear-gradient(to bottom right, rgb(185, 247, 185), rgb(245, 115, 115));
+    background-size: cover;
+}
+
+#animal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.animal-info {
+    margin: 10px;
+    width: 300px;
+    flex-grow: 0;
+}
