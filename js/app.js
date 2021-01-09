@@ -7,6 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAllAnimals = document.querySelector('#delete-all');
     deleteAllAnimals.addEventListener('click', handleDeleteAllAnimals);
 
+    const animalCounter = document.querySelector('#submit-button');
+    let count = 0;
+    animalCounter.onclick = () => {
+        count ++;
+        const animalText = document.querySelector('#animal-count');
+        animalText.innerHTML = "Number of animals in list: " + count;
+    };
+
 });
 
 
@@ -55,6 +63,10 @@ const handleDeleteAllAnimals = () => {
     const allAnimalListItems = document.querySelector('#animal-list');
     allAnimalListItems.innerHTML = '';
 
+    // Reset counter
+    const animalText = document.querySelector('#animal-count');
+    animalText.innerHTML = "No animals have been added to the list yet."
+    count = 0;
 };
 
 
